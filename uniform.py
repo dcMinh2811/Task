@@ -8,12 +8,12 @@ def measure_runtime(func, *args, **kwargs):
     return result
 
 def arent_equal(a, b):
-    l = []
+    count = 0
     for n in range(len(str(a)), len(str(b)) + 1):
         for x in range(1, 10):
             if a <= int(str(x) * n) <= b:
-                l.append(int(str(x) * n))
-    print(len(l))
+                count += 1
+    return print(count)
 
 while True:
     a = int(input("Enter a number (A): "))
