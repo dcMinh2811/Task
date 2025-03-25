@@ -14,7 +14,6 @@ def arent_equal(a, b):
             if a <= int(str(x) * n) <= b:
                 l.append(int(str(x) * n))
     print(len(l))
-    print(l)
 
 while True:
     a = int(input("Enter a number (A): "))
